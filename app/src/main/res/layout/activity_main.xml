@@ -7,63 +7,55 @@
 
     <TextView android:text="@string/my_title" android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:id="@+id/textView" />
+        android:id="@+id/title"
+        android:layout_centerHorizontal="true" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/spotify_reader_btn"
-        android:id="@+id/button"
-        android:layout_below="@+id/textView"
-        android:layout_centerHorizontal="true" />
+        android:id="@+id/spotifyBtn"
+        android:layout_below="@+id/title"
+        android:layout_centerInParent="true" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/scores_app_btn"
-        android:id="@+id/button2"
-        android:layout_below="@+id/button"
-        android:layout_centerHorizontal="true" />
+        android:id="@+id/scoresBtn"
+        android:layout_below="@+id/spotifyBtn"
+        android:layout_centerInParent="true" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/library_app_btn"
-        android:id="@+id/button3"
-        android:layout_below="@+id/button2"
-        android:layout_centerHorizontal="true" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="New Button"
-        android:id="@+id/button4"
-        android:layout_below="@+id/button3"
-        android:layout_centerHorizontal="true" />
+        android:id="@+id/libraryBtn"
+        android:layout_below="@+id/scoresBtn"
+        android:layout_centerInParent="true" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/build_it_bigger_btn"
-        android:id="@+id/button5"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
+        android:id="@+id/buildBtn"
+        android:layout_below="@+id/libraryBtn"
+        android:layout_centerInParent="true" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/xyz_reader_btn"
-        android:id="@+id/button6"
-        android:layout_below="@+id/button5"
-        android:layout_centerHorizontal="true" />
+        android:id="@+id/xyzBtn"
+        android:layout_below="@+id/buildBtn"
+        android:layout_centerInParent="true" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/capstone_btn"
-        android:id="@+id/button7"
-        android:layout_below="@+id/button6"
-        android:layout_centerHorizontal="true" />
+        android:id="@+id/capstoneBtn"
+        android:layout_below="@+id/xyzBtn"
+        android:layout_centerInParent="true" />
 
 </RelativeLayout>
