@@ -23,6 +23,13 @@ public class MainActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        spotifyBtn = (Button) findViewById(R.id.spotifyBtn);
+        scoreBtn = (Button) findViewById(R.id.scoresBtn);
+        libraryBtn = (Button) findViewById(R.id.libraryBtn);
+        buildBtn = (Button) findViewById(R.id.buildBtn);
+        xyzBtn = (Button) findViewById(R.id.xyzBtn);
+        capstoneBtn = (Button) findViewById(R.id.capstoneBtn);
+
         spotifyBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -92,7 +99,7 @@ public class MainActivity extends ActionBarActivity {
     public void onSpotifyBtnClick(View v) {
         // Display toast message
         Toast.makeText(getApplicationContext(),
-                "This button will launch my capstone app!",
+                "This button will launch my spotify streamer app!",
                 Toast.LENGTH_LONG).show();
     }
 
@@ -120,7 +127,7 @@ public class MainActivity extends ActionBarActivity {
     public void onXyzBtnClick(View v) {
         // Display toast message
         Toast.makeText(getApplicationContext(),
-                "This button will launch xyz app!",
+                "This button will launch xyz reader app!",
                 Toast.LENGTH_LONG).show();
     }
 
