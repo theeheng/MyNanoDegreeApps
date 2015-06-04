@@ -2,40 +2,34 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="@android:style/Theme.Material.Light.DarkActionBar">
         <!-- Customize your theme here. -->
 
         <!-- colorPrimary is used for the default action bar background -->
-        <item name="colorPrimary">#f08c35</item>
+        <item name="android:colorPrimary">#f08c35</item>
 
         <!-- colorPrimaryDark is used for the status bar -->
-        <item name="colorPrimaryDark">#a86225</item>
+        <item name="android:colorPrimaryDark">#a86225</item>
 
         <!-- colorAccent is used as the default value for colorControlActivated
              which is used to tint widgets -->
-        <item name="colorAccent">#DDE5EB</item>
+        <item name="android:colorAccent">#DDE5EB</item>
 
         <!-- You can also set colorControlNormal, colorControlActivated
              colorControlHighlight & colorSwitchThumbNormal. -->
-
         <item name="android:buttonStyle">@style/MyButton</item>
-
     </style>
 
-    <style name="MyButton" parent="android:style/Widget.Button">
-             <item name="android:background">@drawable/button_drawable</item>
-             <item name="android:textColor">#000000</item>
-             <item name="android:textAlignment">center</item>
+    <style name="MyButton">
+        <item name="android:elevation">10dp</item>
+        <item name="android:background">@drawable/button_drawable</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textAlignment">center</item>
         <item name="android:gravity">center</item>
         <item name="android:padding">10dp</item>
-        <item name="android:elevation">10dp</item>
         <item name="android:textAllCaps">true</item>
         <item name="android:textStyle">bold</item>
     </style>
 
-    <style name="TitleText">
-        <item name="android:textSize">20dp</item>
-        <item name="android:textStyle">bold</item>
-    </style>
 
     </resources>

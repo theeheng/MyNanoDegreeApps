@@ -1,6 +1,6 @@
 package com.hengtan.nanodegreeapp.mynanodegreeapps;
 
-import android.support.v7.app.ActionBarActivity;
+import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -9,7 +9,7 @@ import android.widget.Button;
 import android.widget.Toast;
 
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends Activity {
 
     private Button spotifyBtn;
     private Button scoreBtn;
@@ -17,6 +17,7 @@ public class MainActivity extends ActionBarActivity {
     private Button buildBtn;
     private Button xyzBtn;
     private Button capstoneBtn;
+    private Toast toastMessage;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -96,45 +97,47 @@ public class MainActivity extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void onSpotifyBtnClick(View v) {
+    public void onSpotifyBtnClick(Button b) {
         // Display toast message
-        Toast.makeText(getApplicationContext(),
-                "This button will launch my spotify streamer app!",
-                Toast.LENGTH_LONG).show();
+        DisplayToastMessage(b);
     }
 
-    public void onScoreBtnClick(View v) {
+    public void onScoreBtnClick(Button b) {
         // Display toast message
-        Toast.makeText(getApplicationContext(),
-                "This button will launch scores app!",
-                Toast.LENGTH_LONG).show();
+        DisplayToastMessage(b);
     }
 
-    public void onLibraryBtnClick(View v) {
+    public void onLibraryBtnClick(Button b) {
         // Display toast message
-        Toast.makeText(getApplicationContext(),
-                "This button will launch library app!",
-                Toast.LENGTH_LONG).show();
+        DisplayToastMessage(b);
     }
 
-    public void onBuildBtnClick(View v) {
+    public void onBuildBtnClick(Button b) {
         // Display toast message
-        Toast.makeText(getApplicationContext(),
-                "This button will launch build it bigger app!",
-                Toast.LENGTH_LONG).show();
+        DisplayToastMessage(b);
     }
 
-    public void onXyzBtnClick(View v) {
+    public void onXyzBtnClick(Button b) {
         // Display toast message
-        Toast.makeText(getApplicationContext(),
-                "This button will launch xyz reader app!",
-                Toast.LENGTH_LONG).show();
+        DisplayToastMessage(b);
     }
 
-    public void onCapstoneBtnClick(View v) {
+    public void onCapstoneBtnClick(Button b) {
         // Display toast message
-        Toast.makeText(getApplicationContext(),
-                "This button will launch my capstone app!",
-                Toast.LENGTH_LONG).show();
+        DisplayToastMessage(b);
+    }
+
+    public void  DisplayToastMessage(Button b)
+    {
+        String applicationName = b.getText().toString();
+
+        //Stop any previous toasts
+        if(toastMessage !=null){ toastMessage.cancel(); }
+
+        // Display toast message
+        toastMessage = Toast.makeText(this,
+                        "This button will launch "+applicationName+" app!",
+                        Toast.LENGTH_LONG);
+        toastMessage.show();
     }
 }

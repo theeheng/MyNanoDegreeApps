@@ -10,8 +10,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/title"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="5dp"
-        android:layout_marginBottom="5dp"
+        android:layout_margin="@dimen/text_margin"
         style="@style/TitleText" />
 
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -27,7 +26,7 @@
         android:layout_height="wrap_content"
         android:text="@string/spotify_reader_btn"
         android:id="@+id/spotifyBtn"
-        android:layout_margin="5dp"
+        android:layout_margin="@dimen/button_margin"
         style="@style/MyButton" />
 
     <Button
@@ -36,7 +35,7 @@
         android:text="@string/scores_app_btn"
         android:id="@+id/scoresBtn"
         android:layout_below="@+id/spotifyBtn"
-        android:layout_margin="5dp"
+        android:layout_margin="@dimen/button_margin"
         style="@style/MyButton"/>
 
     <Button
@@ -46,7 +45,7 @@
         android:id="@+id/libraryBtn"
         android:layout_below="@+id/scoresBtn"
         android:layout_centerInParent="true"
-        android:layout_margin="5dp"
+        android:layout_margin="@dimen/button_margin"
         style="@style/MyButton"/>
 
     <Button
@@ -55,7 +54,7 @@
         android:text="@string/build_it_bigger_btn"
         android:id="@+id/buildBtn"
         android:layout_below="@+id/libraryBtn"
-        android:layout_margin="5dp"
+        android:layout_margin="@dimen/button_margin"
         style="@style/MyButton"/>
 
     <Button
@@ -64,7 +63,7 @@
         android:text="@string/xyz_reader_btn"
         android:id="@+id/xyzBtn"
         android:layout_below="@+id/buildBtn"
-        android:layout_margin="5dp"
+        android:layout_margin="@dimen/button_margin"
         style="@style/MyButton"/>
 
     <Button
@@ -76,7 +75,7 @@
         style="@style/MyButton"
         android:background="#CD0E3E"
         android:textColor="#ffffffff"
-        android:layout_margin="5dp"/>
+        android:layout_margin="@dimen/button_margin"/>
 
     </RelativeLayout>
 
